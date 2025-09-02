@@ -1,0 +1,40 @@
+.body-hidden {
+  overflow: hidden;
+  touch-action: none;
+}
+.body {
+}
+
+.content {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 130%;
+  letter-spacing: 0.03em;
+
+  @include tablet {
+    font-size: 14px;
+  }
+}
+
+.sect-p {
+  padding: 80px 0px;
+  @include laptop-min {
+    padding: 50px 0px;
+  }
+}
+
+.tag {
+  width: fit-content;
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+  color: #727272;
+  padding: 6px 27px;
+  border: 1px solid #727272;
+  border-radius: 5px;
+
+  &._white {
+    border-color: white;
+    color: white;
+  }
+}

@@ -1,0 +1,52 @@
+.s-about {
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    @include laptop-min {
+      grid-template-columns: 1fr;
+    }
+  }
+  &__body {
+    background-color: #6c6e68;
+    border-radius: 10px;
+    padding: 30px 20px 30px 30px;
+    color: white;
+    @include tablet {
+      padding: 25px 15px 40px 15px;
+      border-radius: 5px;
+    }
+    @include tablet-min {
+      padding: 10px 10px 40px 10px;
+    }
+  }
+  &__title {
+    margin: 100px 0px 35px 0px;
+
+    @include tablet {
+      margin: 60px 0px 20px 0px;
+    }
+
+    span {
+      display: block !important;
+    }
+  }
+  &__content {
+    margin: 0;
+  }
+  &__img {
+    border-radius: 10px;
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    @include laptop-min {
+      height: auto;
+    }
+    @include tablet {
+      border-radius: 5px;
+    }
+    @media (max-width: 399px) {
+      max-height: 180px;
+    }
+  }
+}

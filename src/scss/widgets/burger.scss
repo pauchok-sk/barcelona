@@ -1,0 +1,107 @@
+.burger-wrapper {
+  position: fixed;
+  overflow: hidden;
+  inset: 0;
+  z-index: 110;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  opacity: 0;
+  visibility: hidden;
+
+  transition:
+    opacity 0.4s ease,
+    visibility 0.4s ease;
+
+  &._open {
+    opacity: 1;
+    visibility: visible;
+
+    .burger {
+      transform: translateX(0);
+    }
+  }
+}
+.burger-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  
+
+  transition:
+    opacity 0.4s ease,
+    visibility 0.4s ease;
+}
+.burger {
+  position: relative;
+  padding: 120px 40px;
+  height: 100%;
+  overflow-y: auto;
+  background-color: white;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  max-width: calc(100% - 30px);
+  transform: translateX(100%);
+  transition: transform 0.4s ease;
+  @include tablet {
+    padding: 50px 20px 40px 20px;
+  }
+  &__close {
+    position: absolute;
+    cursor: pointer;
+    top: 15px;
+    right: 15px;
+    width: 25px;
+    height: 25px;
+
+    transition: color 0.3s ease;
+    @include hover {
+      color: var(--primary);
+    }
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__nav {
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    a {
+      font-weight: 500;
+      font-size: 18px;
+      text-transform: uppercase;
+      color: #32372f;
+
+      transition: color 0.3s ease;
+      @include hover {
+        color: var(--primary);
+      }
+      @include tablet {
+        font-size: 16px;
+      }
+    }
+  }
+  &__buttons {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 160px;
+    @include tablet {
+      width: 100%;
+    }
+  }
+  &__btn {
+    width: 230px;
+    padding: 13px 5px !important;
+    @include tablet {
+      width: 100%;
+    }
+  }
+}

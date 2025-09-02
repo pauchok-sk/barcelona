@@ -1,0 +1,46 @@
+.btn-reset {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  color: inherit;
+}
+
+.btn-s {
+  @include flex-center;
+  gap: 20px;
+  cursor: pointer;
+  padding: 17px 20px;
+  width: fit-content;
+  border-radius: 5px;
+  border: 1px solid var(--primary);
+  background-color: var(--primary);
+
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+
+  transition: color .3s ease, border-color .3s ease, background-color .3s ease;
+  @include hover {
+    border-color: var(--primary-dark);
+    background-color: var(--primary-dark);
+  }
+  @include tablet {
+    font-size: 16px;
+    padding: 15px;
+  }
+
+  &._outline {
+    font-weight: 400;
+    background-color: transparent;
+    color: var(--primary);
+
+    @include hover {
+      background-color: var(--primary);
+      border-color: var(--primary);
+      color: white;
+    }
+  }
+}

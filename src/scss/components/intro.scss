@@ -1,0 +1,49 @@
+.intro {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  min-height: 730px;
+  background-attachment: fixed !important;
+  padding: 130px 0px 90px 0px;
+  color: white;
+  z-index: 1;
+  @include laptop-middle {
+    min-height: 600px;
+    padding-bottom: 50px;
+  }
+  @include tablet-min {
+    min-height: 100vh;
+  }
+  &::before {
+    position: absolute;
+    content: "";
+    inset: 0;
+    background: rgba(104, 96, 89, 0.2);
+    z-index: -1;
+  }
+  &__wrapper {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 30px;
+    @include tablet-min {
+      flex-wrap: wrap;
+    }
+  }
+  &__title {
+    margin: 0;
+  }
+  &__btn {
+    width: 250px;
+    max-width: 100%;
+    transform: translateY(-10px);
+    flex-shrink: 0;
+    @include tablet {
+      transform: translateY(0);
+    }
+    @include tablet-min {
+      width: 100%;
+    }
+  }
+}

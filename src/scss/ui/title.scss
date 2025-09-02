@@ -1,0 +1,26 @@
+.s-title {
+  font-weight: 500;
+  font-size: 40px;
+  text-transform: uppercase;
+  margin: 0;
+
+  @include tablet {
+    font-size: 25px;
+  }
+
+  span {
+    font-family: "Playfair Display", sans-serif;
+    text-transform: none;
+    display: block;
+    margin-top: -10px;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 50px;
+    color: #e5e6e1;
+    @include tablet {
+      font-size: 30px;
+      display: inline;
+      margin-top: 0;
+    }
+  }
+}
