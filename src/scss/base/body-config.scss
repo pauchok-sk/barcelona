@@ -38,3 +38,23 @@
     color: white;
   }
 }
+
+.sect-head {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  @include tablet-min {
+    flex-direction: column-reverse;
+  }
+
+  &._reverse {
+    @media (min-width: 576px) {
+      flex-direction: row-reverse;
+      .s-title {
+        text-align: right;
+      }
+    }
+  }
+}

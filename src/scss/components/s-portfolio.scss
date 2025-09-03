@@ -1,0 +1,70 @@
+.s-portfolio {
+  overflow: hidden;
+  &__slider {
+    overflow: visible !important;
+    margin-top: 45px;
+    @include laptop-min {
+      margin-top: 30px;
+    }
+  }
+  &__slide {
+    position: relative;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    gap: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    min-height: 295px;
+    max-width: 100%;
+    width: 395px !important;
+    color: white;
+    z-index: 1;
+
+    &:first-child {
+      border-radius: 10px 0 0 10px;
+    }
+    &:last-child {
+      border-radius: 0px 10px 10px 0px;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      inset: 0;
+      background: rgba(76, 73, 71, 0.3);
+      z-index: -1;
+    }
+  }
+  &__slide-tag {
+    font-weight: 500;
+    width: fit-content;
+    font-size: 14px;
+    border: 1px solid white;
+    border-radius: 5px;
+    backdrop-filter: blur(5px);
+    padding: 6px 14px;
+    background: rgba(0, 0, 0, 0.1);
+
+    @include tablet-min {
+      width: 100%;
+      text-align: center;
+      padding: 7px;
+      font-size: 12px;
+    }
+  }
+  &__slide-title {
+    font-style: italic;
+    font-family: "Playfair Display", sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    margin: 0;
+    @include tablet-min {
+      font-size: 18px;
+    }
+  }
+  &__slider-nav {
+    margin-left: auto;
+  }
+}
