@@ -1,0 +1,149 @@
+.footer {
+  padding: 80px 0px;
+  color: #32372f;
+  @include laptop-min {
+    padding: 60px 0px;
+  }
+  @include tablet {
+    padding: 50px 0px;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    @include tablet {
+      flex-direction: column;
+      gap: 25px;
+    }
+  }
+  &__main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__logo {
+    display: block;
+    margin-bottom: 30px;
+    font-weight: 500;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #32372f;
+    white-space: nowrap;
+    @include tablet-min {
+      margin-bottom: 0;
+      font-size: 16px;
+    }
+  }
+  &__main-btn {
+    width: 200px;
+    max-width: 100%;
+    @include tablet-min {
+      width: 100%;
+      margin-top: 30px;
+    }
+
+    &._desk {
+      @include tablet-min {
+        display: none;
+      }
+    }
+    &._mob {
+      @media (min-width: 575px) {
+        display: none;
+      }
+    }
+  }
+  &__nav {
+    display: flex;
+    gap: 48px;
+    @include laptop-min {
+      gap: 30px;
+    }
+    @include tablet-min {
+      flex-direction: column;
+    }
+  }
+  &__nav-item {
+  }
+  &__nav-title {
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    margin: 0px 0px 20px 0px;
+    @include tablet-min {
+      font-size: 12px;
+    }
+  }
+  &__contacts-btn {
+    display: block;
+    width: fit-content;
+    font-size: 16px;
+    line-height: 130%;
+    letter-spacing: 0.03em;
+    margin-bottom: 10px;
+
+    transition: color 0.3s ease;
+    @include hover {
+      color: var(--primary);
+    }
+    @include tablet {
+      font-size: 12px;
+    }
+  }
+  &__contacts-wrapper {
+    @include tablet-min {
+      @include flex-between;
+      gap: 10px;
+    }
+  }
+  &__social {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    @include tablet-min {
+      margin-top: 0;
+    }
+  }
+  &__social-btn {
+    @include flex-center;
+    width: 30px;
+    height: 30px;
+    background-color: #6c6e68;
+    border-radius: 6px;
+
+    color: white;
+
+    transition: background-color 0.3s ease;
+
+    @include hover {
+      background-color: var(--primary);
+    }
+
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  &__nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    a {
+      font-size: 16px;
+      line-height: 130%;
+      letter-spacing: 0.03em;
+
+      transition: color .3s ease;
+
+      @include hover {
+        color: var(--primary);
+      }
+      @include tablet {
+        font-size: 12px;
+      }
+    }
+  }
+}

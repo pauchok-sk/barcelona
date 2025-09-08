@@ -1,0 +1,99 @@
+<!doctype html>
+<style lang="ru"></style>
+<html>
+  @@include('html/head.html',{ "title":"pauchoo0k" })
+  <body class="body">
+    @@include('html/components/header.html')
+    <main>
+      <section class="intro">
+        <picture class="intro__bg">
+          <source
+            srcset="@img/intro-weddings-mob.jpg"
+            media="(max-width: 576px)"
+          />
+          <img src="@img/intro-weddings.jpg" alt="image" />
+        </picture>
+        <div class="container">
+          <div class="intro__wrapper">
+            <h1 class="intro__title s-title">
+              Свадьба - день полный
+              <span>любви и красоты</span>
+            </h1>
+            <a href="#modal-connect" data-fancybox class="btn-s intro__btn">
+              Оставить заявку
+            </a>
+          </div>
+        </div>
+      </section>
+      @@include('html/components/s-event.html')
+      @@include('html/components/s-steps.html')
+      @@include('html/components/s-media.html')
+      <section class="s-reviews">
+        <div class="s-reviews__body" style="background: url('@img/reviews-bg.jpg') center / cover no-repeat;">
+          <div class="container">
+            <div class="tag s-reviews__tag _white">Отзывы</div>
+            <div class="s-reviews__slider-wrapper">
+              <div class="slider-arrow _prev">
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#icon-prev"></use>
+                </svg>
+              </div>
+              <div class="swiper s-reviews__slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide s-reviews__slide">
+                    <h3 class="s-reviews__slide-title">Михаил & Елизавета</h3>
+                    <p class="s-reviews__slide-content">
+                      «Спасибо, что сделали наш день по-настоящему волшебным!
+                      Всё было именно так, как мы мечтали: лёгкая атмосфера,
+                      живая музыка, тёплый свет гирлянд, красивые детали,
+                      вкусная еда. Вы учли каждое наше пожелание, помогли не
+                      волноваться и наслаждаться моментом. Гости были в
+                      восторге! А мы с любовью пересматриваем фото и видео.
+                      Очень рады, что выбрали именно вас»
+                    </p>
+                  </div>
+                  <div class="swiper-slide s-reviews__slide">
+                    <h3 class="s-reviews__slide-title">Михаил & Елизавета</h3>
+                    <p class="s-reviews__slide-content">
+                      «Спасибо, что сделали наш день по-настоящему волшебным!
+                      Всё было именно так, как мы мечтали: лёгкая атмосфера,
+                      живая музыка, тёплый свет гирлянд, красивые детали,
+                      вкусная еда. Вы учли каждое наше пожелание, помогли не
+                      волноваться и наслаждаться моментом. Гости были в
+                      восторге! А мы с любовью пересматриваем фото и видео.
+                      Очень рады, что выбрали именно вас»
+                    </p>
+                  </div>
+                  <div class="swiper-slide s-reviews__slide">
+                    <h3 class="s-reviews__slide-title">Михаил & Елизавета</h3>
+                    <p class="s-reviews__slide-content">
+                      «Спасибо, что сделали наш день по-настоящему волшебным!
+                      Всё было именно так, как мы мечтали: лёгкая атмосфера,
+                      живая музыка, тёплый свет гирлянд, красивые детали,
+                      вкусная еда. Вы учли каждое наше пожелание, помогли не
+                      волноваться и наслаждаться моментом. Гости были в
+                      восторге! А мы с любовью пересматриваем фото и видео.
+                      Очень рады, что выбрали именно вас»
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="slider-arrow _next">
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#icon-next"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="s-reviews__gallery">
+          <img src="@img/reviews-2.jpg" alt="image" />
+        </div>
+      </section>
+      @@include('html/components/s-faq.html')
+    </main>
+    @@include('html/components/modals.html')
+    @@include('html/components/footer.html')
+    <script src="js/app.min.js"></script>
+  </body>
+</html>

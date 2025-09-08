@@ -32,10 +32,17 @@
   padding: 6px 27px;
   border: 1px solid #727272;
   border-radius: 5px;
+  min-width: 100px;
 
   &._white {
     border-color: white;
     color: white;
+  }
+
+  @include tablet {
+    font-size: 12px;
+    padding: 5px 17px;
+    min-width: 80px;
   }
 }
 

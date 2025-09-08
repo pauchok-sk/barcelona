@@ -1,11 +1,25 @@
 .header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
   padding-top: 40px;
   color: white;
   z-index: 100;
+
+  transition: background-color .4s ease, transform .4s ease, padding .4s ease;
+
+  &._bg {
+    background-color: var(--dark);
+    padding: 20px 0px;
+    @include tablet {
+      padding: 15px 0px;
+    }
+  }
+  &._scroll {
+    transform: translateY(-100%);
+  }
+
   &__wrapper {
     display: grid;
     align-items: center;
