@@ -1,0 +1,75 @@
+.s-reviews {
+  &__body {
+    padding: 80px 0px;
+    background-color: #6c6e68;
+    color: white;
+    @include tablet {
+      padding: 50px 0px;
+    }
+  }
+  &__tag {
+    margin: 0px auto 35px auto;
+    @include tablet {
+      margin-bottom: 30px;
+    }
+    @include tablet-min {
+      font-size: 12px;
+      padding: 5px 17px;
+    }
+  }
+  &__slider-wrapper {
+    @include flex-between;
+    gap: 25px;
+  }
+  &__slider {
+    flex: 0 1 655px;
+  }
+  &__slide {
+    text-align: center;
+  }
+  &__slide-title {
+    font-family: "Playfair Display", sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 130%;
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin: 0px 0px 20px 0px;
+
+    @include tablet {
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+  }
+  &__slide-content {
+    margin: 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 130%;
+    letter-spacing: 0.03em;
+    text-align: center;
+    @include tablet {
+      font-size: 12px;
+    }
+  }
+  &__gallery {
+    position: relative;
+    z-index: 1;
+    &::before {
+      position: absolute;
+      content: "";
+      background-color: #686059;
+      opacity: 0.2;
+      inset: 0;
+      z-index: 1;
+    }
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+      min-height: 275px;
+      object-fit: cover;
+    }
+  }
+}

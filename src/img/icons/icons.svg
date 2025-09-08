@@ -4,4 +4,8 @@
 <path d="M0.292893 7.29289C-0.0976311 7.68342 -0.0976311 8.31658 0.292893 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928932C7.68054 0.538408 7.04738 0.538408 6.65685 0.928932L0.292893 7.29289ZM89 8V7L1 7V8V9L89 9V8Z" fill="currentColor"/>
 </symbol><symbol viewBox="0 0 24 24" fill="none" id="icon-close" xmlns="http://www.w3.org/2000/svg">
 <path d="M19.9999 19.9999L12 12M12 12L4 4M12 12L20 4M12 12L4 20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</symbol><symbol viewBox="0 0 14 28" fill="none" id="icon-next" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 1L13 14L1 27" stroke="currentColor" stroke-width="1.2"/>
+</symbol><symbol viewBox="0 0 14 28" fill="none" id="icon-prev" xmlns="http://www.w3.org/2000/svg">
+<path d="M13 27L1 14L13 1" stroke="currentColor" stroke-width="1.2"/>
 </symbol></svg>
