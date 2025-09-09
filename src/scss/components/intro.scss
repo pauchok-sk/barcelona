@@ -19,7 +19,8 @@
     position: absolute;
     content: "";
     inset: 0;
-    background: rgba(104, 96, 89, 0.2);
+    background: #686059;
+    opacity: 0.3;
     z-index: -1;
   }
   &__bg {
