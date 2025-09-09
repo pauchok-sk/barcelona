@@ -65,3 +65,23 @@
     }
   }
 }
+
+.preview {
+  position: relative;
+  z-index: 1;
+  &::before {
+    position: absolute;
+    content: "";
+    background-color: #686059;
+    opacity: 0.2;
+    inset: 0;
+    z-index: 1;
+  }
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    min-height: 275px;
+    object-fit: cover;
+  }
+}

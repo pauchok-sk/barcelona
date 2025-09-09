@@ -30,4 +30,35 @@ export default function sliders() {
       },
     });
   }
+
+  const formatSlider = document.querySelector(".s-format__slider");
+
+  if (formatSlider) {
+    const swiper = new Swiper(formatSlider, {
+      speed: 800,
+      spaceBetween: 10,
+      slidesPerView: 1,
+      autoplay: {
+        delay: 3200,
+      },
+      navigation: {
+        prevEl: ".s-reviews .slider-arrow._prev",
+        nextEl: ".s-reviews .slider-arrow._next",
+      },
+      breakpoints: {
+        992: {
+          spaceBetween: 20,
+          slidesPerView: 4,
+        },
+        768: {
+          spaceBetween: 20,
+          slidesPerView: 3,
+        },
+        576: {
+          spaceBetween: 20,
+          slidesPerView: 2,
+        },
+      },
+    });
+  }
 }

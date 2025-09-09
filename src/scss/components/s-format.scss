@@ -1,0 +1,43 @@
+.s-format {
+  &__slider {
+    margin-top: 60px;
+    @include laptop-min {
+      margin-top: 40px;
+    }
+    @include tablet {
+      margin-top: 30px;
+    }
+  }
+  &__slide {
+    border-radius: 10px;
+    padding: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    min-height: 430px;
+
+    @include tablet {
+      min-height: 250px;
+    }
+  }
+  &__slide-tag {
+    backdrop-filter: blur(5px);
+    background: rgba(0, 0, 0, 0.1);
+
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+    color: white;
+    padding: 6px;
+    width: 100%;
+    border: 1px solid white;
+    border-radius: 5px;
+  }
+  &__slide-btn {
+    padding: 12px !important;
+    width: 100%;
+    font-size: 20px !important;
+  }
+}
