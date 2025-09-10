@@ -1,0 +1,569 @@
+<!doctype html>
+<style lang="ru"></style>
+<html>
+
+<head>
+	<title>Barcelona</title>
+	<meta charset="UTF-8" />
+	<meta name="format-detection" content="telephone=no" />
+	<link rel="shortcut icon" href="favicon.ico" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap&_v=20250910211733" rel="stylesheet" />
+	<link rel="stylesheet" href="./files/fancybox/fancybox.min.css?_v=20250910211733">
+	<link rel="stylesheet" href="./files/swiper/swiper.min.css?_v=20250910211733">
+	<link rel="stylesheet" href="./files/aos/aos.min.css?_v=20250910211733">
+	<link rel="stylesheet" href="css/style.min.css?_v=20250910211733" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body class="body">
+	<header class="header">
+		<div class="container">
+			<div class="header__wrapper">
+				<ul class="list header__list-lang">
+					<li><a href="#">ENG</a></li>
+					<li><a href="#">ESP</a></li>
+				</ul>
+				<a href="/" class="header__logo">Barcelona event</a>
+				<div class="header__burger-btn" id="burger-open">
+					<div></div>
+					<div></div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="burger-wrapper" id="burger-wrapper">
+		<div class="burger-overlay" id="burger-overlay"></div>
+		<div class="burger" id="burger">
+			<div class="burger__close" id="burger-close">
+				<svg>
+					<use xlink:href="img/icons/icons.svg#icon-close"></use>
+				</svg>
+			</div>
+			<nav class="burger__nav">
+				<ul class="list burger__list">
+					<li><a href="#">Главная страница</a></li>
+					<li><a href="#">О нас</a></li>
+					<li><a href="#">Услуги</a></li>
+					<li><a href="#">Отзывы</a></li>
+					<li><a href="#">FAQ</a></li>
+				</ul>
+			</nav>
+			<div class="burger__buttons">
+				<a href="#modal-connect" data-fancybox class="btn-s burger__btn">
+					Обратный звонок
+				</a>
+				<a href="#" target="_blank" class="btn-s burger__btn _outline">
+					Написать в WhatsApp
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<main>
+		<section class="intro">
+			<picture class="intro__bg">
+				<source srcset="img/intro-birthdays-mob.jpg" media="(max-width: 576px)" />
+				<img src="img/intro-birthdays.jpg" alt="image" />
+			</picture>
+			<div class="container">
+				<div class="intro__wrapper">
+					<h1 class="intro__title s-title" data-aos="fade-up" data-aos-delay="300" data-aos-duration="500">
+						ваш стиль, ваша атмосфера,
+						<span>ваш день рождения</span>
+					</h1>
+					<a href="#modal-connect" data-fancybox class="btn-s intro__btn">
+						Оставить заявку
+					</a>
+				</div>
+			</div>
+		</section>
+		<section class="s-gallery sect-p">
+			<div class="container">
+				<h2 class="s-title s-gallery__title _center _dark" data-aos="fade-up" data-aos-duration="500">
+					создаем сценарий написанный
+					<br />
+					<span>под ваш характер</span>
+				</h2>
+				<p class="s-gallery__quote" data-aos="fade-up" data-aos-duration="500">
+					Только продуманный стиль, деликатная режиссура и детали, которые
+					говорят о вас. Хотите камерный ужин в винтажном особняке? Или вечер
+					с живой группой и коктейльным баром на крыше? Мы не ограничеваем
+					формат мероприятия - мы находим форму для вашего настроения.
+				</p>
+				<div class="s-gallery__script-grid">
+					<div class="s-gallery__item-gallery" data-aos="fade" data-aos-duration="500" style="
+                background: url(&quot;img/script-grid.jpg&quot;) center / cover
+                  no-repeat;
+              "></div>
+					<div class="s-gallery__item-descr" data-aos="fade-up" data-aos-duration="500">
+						<span>
+							<h5>Берем все на себя</h5>
+							<p>
+								Организовываем мероприятие под ключ, даем вам возможность не
+								думать о деталях процесса.
+							</p>
+						</span>
+					</div>
+					<div class="s-gallery__item-descr _fill" data-aos="fade-up" data-aos-duration="500">
+						<span>
+							<h5>Прозрачные условия, надежные партнеры</h5>
+							<p>
+								Работаем по договору, согласовываем бюджет, фиксируем сроки,
+								чтобы вы чувствовали себя спокойно в юридических вопросах.
+								Сотрудничаем только с проверенными подрядчиками, чье качество
+								соответствует высокому уровню и нашему подходу.
+							</p>
+						</span>
+					</div>
+					<div class="s-gallery__item-descr" data-aos="fade-up" data-aos-duration="500">
+						<span>
+							<h5>против банальности</h5>
+							<p>
+								Каждый проект начинаем с чистого листа. Никаких шаблонов и
+								типовых сценариев, только ваш стиль и пожелания.
+							</p>
+						</span>
+					</div>
+					<div class="s-gallery__item-gallery" data-aos="fade" data-aos-duration="500" style="
+                background: url(&quot;img/script-grid.jpg&quot;) center / cover
+                  no-repeat;
+              "></div>
+					<div class="s-gallery__item-descr" data-aos="fade-up" data-aos-duration="500">
+						<span>
+							<h5>теплый подход</h5>
+							<p>
+								С нами легко, спокойно и по-человечески. Мы вникаем, а не
+								продаем. Спрашиваем, а не навязываем.
+							</p>
+						</span>
+					</div>
+				</div>
+				<a href="#modal-price" data-fancybox class="btn-s s-gallery__btn">
+					Рассчитать стоимость
+				</a>
+			</div>
+		</section>
+		<section class="s-steps sect-p">
+			<div class="container">
+				<div class="sect-head s-steps__head">
+					<h2 data-aos="fade-right" data-aos-duration="500" class="s-title _dark s-steps__title">
+						Сценарий нашего
+						<br />
+						<span>сотрудничества</span>
+					</h2>
+					<div class="tag">Этапы работы</div>
+				</div>
+				<div data-aos="fade" data-aos-duration="500">
+					<div class="s-steps__row-head">
+						<div data-da=".s-steps__row-bottom,991,1" class="s-steps__item">
+							<div class="s-steps__item-head">
+								<h5 class="s-steps__item-title">Концепция</h5>
+								<div class="s-steps__num">2</div>
+							</div>
+							<p class="s-steps__item-content">
+								Прорабатываем все детали мероприятия, продумываем стилистику,
+								визуальный образ и презентуем вам итоговую концепцию.
+							</p>
+						</div>
+						<div data-da=".s-steps__row-bottom,991,2" class="s-steps__item">
+							<div class="s-steps__item-head">
+								<h5 class="s-steps__item-title">Согласование</h5>
+								<div class="s-steps__num">4</div>
+							</div>
+							<p class="s-steps__item-content">
+								Утверждаем с вами финальные штрихи: макеты, сценарий, исполнителей,
+								программу, итоговую смету.
+							</p>
+						</div>
+					</div>
+					<div class="s-steps__row-bottom">
+						<div class="s-steps__item">
+							<div class="s-steps__item-head">
+								<h5 class="s-steps__item-title">Знакомство</h5>
+								<div class="s-steps__num">1</div>
+							</div>
+							<p class="s-steps__item-content">
+								Мы знакомимся с вами и вашим запросом, обсуждаем детали, предлагаем
+								варианты реализации и рассчитываем предварительную стоимость.
+							</p>
+						</div>
+						<div class="s-steps__item">
+							<div class="s-steps__item-head">
+								<h5 class="s-steps__item-title">Подготовка</h5>
+								<div class="s-steps__num">3</div>
+							</div>
+							<p class="s-steps__item-content">
+								Мы занимаемся подготовкой предстоящего мероприятия: собираем команду
+								исполнителей, разрабатываем декор, бронируем площадку.
+							</p>
+						</div>
+						<div class="s-steps__item">
+							<div class="s-steps__item-head">
+								<h5 class="s-steps__item-title">Мероприятие</h5>
+								<div class="s-steps__num">5</div>
+							</div>
+							<p class="s-steps__item-content">
+								В день события мы полностью берём на себя контроль за ходом
+								мероприятия. Вы отдыхаете и получаете удовольствие.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="sect-p s-media">
+			<div class="container">
+				<div class="sect-head _reverse">
+					<h2 class="s-title _dark" data-aos="fade-up" data-aos-duration="500">
+						визуальные моменты
+						<span>проведенных праздников</span>
+					</h2>
+					<div class="tag">Галерея</div>
+				</div>
+				<div class="s-media__gallery-wrapper">
+					<div class="s-media__gallery">
+						<a href="img/media-birthdays.jpg" data-fancybox="media" class="s-media__item" data-aos="fade" data-aos-duration="500">
+							<img src="img/media-birthdays.jpg" alt="image" />
+						</a>
+						<a href="img/media-birthdays.jpg" data-fancybox="media" class="s-media__item" data-aos="fade" data-aos-duration="500">
+							<img src="img/media-birthdays.jpg" alt="image" />
+						</a>
+						<a href="img/media-birthdays.jpg" data-fancybox="media" class="s-media__item" data-aos="fade" data-aos-duration="500">
+							<img src="img/media-birthdays.jpg" alt="image" />
+						</a>
+						<a href="img/media-birthdays.jpg" data-fancybox="media" class="s-media__item" data-aos="fade" data-aos-duration="500">
+							<img src="img/media-birthdays.jpg" alt="image" />
+						</a>
+						<a href="img/media-birthdays.jpg" data-fancybox="media" class="s-media__item" data-aos="fade" data-aos-duration="500">
+							<img src="img/media-birthdays.jpg" alt="image" />
+						</a>
+						<a href="img/media-birthdays.jpg" data-fancybox="media" class="s-media__item" data-aos="fade" data-aos-duration="500">
+							<img src="img/media-birthdays.jpg" alt="image" />
+						</a>
+						<a href="img/media-birthdays.jpg" data-fancybox="media" class="s-media__item" data-aos="fade" data-aos-duration="500">
+							<img src="img/media-birthdays.jpg" alt="image" />
+						</a>
+						<a href="img/media-birthdays.jpg" data-fancybox="media" class="s-media__item" data-aos="fade" data-aos-duration="500">
+							<img src="img/media-birthdays.jpg" alt="image" />
+						</a>
+						<a href="img/media-birthdays.jpg" data-fancybox="media" class="s-media__item" data-aos="fade" data-aos-duration="500">
+							<img src="img/media-birthdays.jpg" alt="image" />
+						</a>
+						<a href="img/media-birthdays.jpg" data-fancybox="media" class="s-media__item" data-aos="fade" data-aos-duration="500">
+							<img src="img/media-birthdays.jpg" alt="image" />
+						</a>
+					</div>
+				</div>
+				<div class="slider-nav s-media__slider-nav">
+					<div class="slider-nav__btn _prev">
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-arrow-prev"></use>
+						</svg>
+					</div>
+					<div class="slider-nav__btn _next">
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+						</svg>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="s-reviews">
+			<div class="s-reviews__body">
+				<div class="container">
+					<div class="tag s-reviews__tag _white">Отзывы</div>
+					<div class="s-reviews__slider-wrapper">
+						<div class="slider-arrow _prev">
+							<svg>
+								<use xlink:href='img/icons/icons.svg#icon-prev'></use>
+							</svg>
+						</div>
+						<div class="swiper s-reviews__slider">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide s-reviews__slide">
+									<h3 class="s-reviews__slide-title">Михаил & Елизавета</h3>
+									<p class="s-reviews__slide-content">
+										«Спасибо, что сделали наш день по-настоящему волшебным! Всё было
+										именно так, как мы мечтали: лёгкая атмосфера, живая музыка, тёплый
+										свет гирлянд, красивые детали, вкусная еда. Вы учли каждое наше
+										пожелание, помогли не волноваться и наслаждаться моментом. Гости
+										были в восторге! А мы с любовью пересматриваем фото и видео. Очень
+										рады, что выбрали именно вас»
+									</p>
+								</div>
+								<div class="swiper-slide s-reviews__slide">
+									<h3 class="s-reviews__slide-title">Михаил & Елизавета</h3>
+									<p class="s-reviews__slide-content">
+										«Спасибо, что сделали наш день по-настоящему волшебным! Всё было
+										именно так, как мы мечтали: лёгкая атмосфера, живая музыка, тёплый
+										свет гирлянд, красивые детали, вкусная еда. Вы учли каждое наше
+										пожелание, помогли не волноваться и наслаждаться моментом. Гости
+										были в восторге! А мы с любовью пересматриваем фото и видео. Очень
+										рады, что выбрали именно вас»
+									</p>
+								</div>
+								<div class="swiper-slide s-reviews__slide">
+									<h3 class="s-reviews__slide-title">Михаил & Елизавета</h3>
+									<p class="s-reviews__slide-content">
+										«Спасибо, что сделали наш день по-настоящему волшебным! Всё было
+										именно так, как мы мечтали: лёгкая атмосфера, живая музыка, тёплый
+										свет гирлянд, красивые детали, вкусная еда. Вы учли каждое наше
+										пожелание, помогли не волноваться и наслаждаться моментом. Гости
+										были в восторге! А мы с любовью пересматриваем фото и видео. Очень
+										рады, что выбрали именно вас»
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="slider-arrow _next">
+							<svg>
+								<use xlink:href='img/icons/icons.svg#icon-next'></use>
+							</svg>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="s-step sect-p">
+			<div class="container">
+				<h2 data-aos="fade-right" data-aos-duration="500" class="s-title s-step__title _dark">
+					сделайте первый шаг <br>
+					<span>к событию вашей мечты</span>
+				</h2>
+				<div class="s-step__wrapper">
+					<p data-aos="fade-up" data-aos-duration="500" class="s-step__content">
+						Заполните форму или напишите нам в WhatsApp - и мы свяжемся с вами чтобы обсудить детали мероприятия
+					</p>
+					<div class="s-step__buttons">
+						<a href="#modal-connect" data-fancybox class="btn-s s-step__btn">
+							Заполнить форму
+						</a>
+						<a href="#" target="_blank" class="btn-s s-step__btn _outline">
+							Написать в WhatsApp
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div class="preview" data-aos="fade" data-aos-duration="500">
+			<img src="img/reviews.jpg" alt="image" />
+		</div>
+		<section class="s-faq sect-p">
+			<div class="container">
+				<div class="tag _white s-faq__tag">FAQ</div>
+				<div data-spollers class="s-faq__spollers">
+					<div data-aos="fade-up" data-aos-duration="500" class="s-faq__spoller">
+						<div data-spoller class="s-faq__spoller-btn">
+							<span>Как забронировать мероприятие?</span>
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-plus"></use>
+							</svg>
+						</div>
+						<div>
+							<div class="s-faq__spoller-body">
+								<p class="s-faq__spoller-content">
+									Для бронирования мероприятия, пожалуйста, заполните форму на нашем
+									сайте или свяжитесь с нами по телефону. Мы свяжемся с вами для
+									уточнения всех деталей.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div data-aos="fade-up" data-aos-duration="500" class="s-faq__spoller">
+						<div data-spoller class="s-faq__spoller-btn">
+							<span>Как забронировать мероприятие?</span>
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-plus"></use>
+							</svg>
+						</div>
+						<div>
+							<div class="s-faq__spoller-body">
+								<p class="s-faq__spoller-content">
+									Для бронирования мероприятия, пожалуйста, заполните форму на нашем
+									сайте или свяжитесь с нами по телефону. Мы свяжемся с вами для
+									уточнения всех деталей.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div data-aos="fade-up" data-aos-duration="500" class="s-faq__spoller">
+						<div data-spoller class="s-faq__spoller-btn">
+							<span>Как забронировать мероприятие?</span>
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-plus"></use>
+							</svg>
+						</div>
+						<div>
+							<div class="s-faq__spoller-body">
+								<p class="s-faq__spoller-content">
+									Для бронирования мероприятия, пожалуйста, заполните форму на нашем
+									сайте или свяжитесь с нами по телефону. Мы свяжемся с вами для
+									уточнения всех деталей.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div data-aos="fade-up" data-aos-duration="500" class="s-faq__spoller">
+						<div data-spoller class="s-faq__spoller-btn">
+							<span>Как забронировать мероприятие?</span>
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-plus"></use>
+							</svg>
+						</div>
+						<div>
+							<div class="s-faq__spoller-body">
+								<p class="s-faq__spoller-content">
+									Для бронирования мероприятия, пожалуйста, заполните форму на нашем
+									сайте или свяжитесь с нами по телефону. Мы свяжемся с вами для
+									уточнения всех деталей.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div data-aos="fade-up" data-aos-duration="500" class="s-faq__spoller">
+						<div data-spoller class="s-faq__spoller-btn">
+							<span>Как забронировать мероприятие?</span>
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-plus"></use>
+							</svg>
+						</div>
+						<div>
+							<div class="s-faq__spoller-body">
+								<p class="s-faq__spoller-content">
+									Для бронирования мероприятия, пожалуйста, заполните форму на нашем
+									сайте или свяжитесь с нами по телефону. Мы свяжемся с вами для
+									уточнения всех деталей.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</main>
+	<div class="modal" id="modal-connect">
+		<h3 class="modal__title">Оставить заявку</h3>
+		<p class="modal__content content">
+			Оставьте заявку и мы свяжемся с Вами в ближайшее время
+		</p>
+
+		<form action="#" class="modal__form">
+			<div class="input-control">
+				<input type="text" placeholder="Имя" class="input" />
+			</div>
+			<div class="input-control">
+				<input type="tel" placeholder="+7 (___) ___-__-__" class="input" />
+			</div>
+			<button class="btn-s modal__form-submit">Отправить</button>
+		</form>
+		<p class="form-policy">
+			Нажимая кнопку «Оставить заявку», Вы принимаете условия
+			<a href="#" target="_blank">Пользовательского соглашения</a>
+			и даю свое согласие на обработку моих
+			<a href="#" target="_blank">персональных данных</a>
+		</p>
+	</div>
+
+	<div class="modal" id="modal-price">
+		<h3 class="modal__title">Рассчитать стоимость</h3>
+		<p class="modal__content content">
+			Оставьте заявку и мы свяжемся с Вами в ближайшее время
+		</p>
+
+		<form action="#" class="modal__form">
+			<div class="input-control">
+				<input type="text" placeholder="Имя" class="input" />
+			</div>
+			<div class="input-control">
+				<input type="tel" placeholder="+7 (___) ___-__-__" class="input" />
+			</div>
+			<button class="btn-s modal__form-submit">Отправить</button>
+		</form>
+		<p class="form-policy">
+			Нажимая кнопку «Оставить заявку», Вы принимаете условия
+			<a href="#" target="_blank">Пользовательского соглашения</a>
+			и даю свое согласие на обработку моих
+			<a href="#" target="_blank">персональных данных</a>
+		</p>
+	</div>
+
+	<div class="modal" id="modal-format">
+		<h3 class="modal__title">Рассчитать стоимость</h3>
+		<p class="modal__content content">
+			Оставьте заявку и мы свяжемся с Вами в ближайшее время
+		</p>
+
+		<form action="#" class="modal__form">
+			<div style="display: none;">
+				<input type="text" id="format-input" />
+			</div>
+			<div class="input-control">
+				<input type="text" placeholder="Имя" class="input" />
+			</div>
+			<div class="input-control">
+				<input type="tel" placeholder="+7 (___) ___-__-__" class="input" />
+			</div>
+			<button class="btn-s modal__form-submit">Отправить</button>
+		</form>
+		<p class="form-policy">
+			Нажимая кнопку «Оставить заявку», Вы принимаете условия
+			<a href="#" target="_blank">Пользовательского соглашения</a>
+			и даю свое согласие на обработку моих
+			<a href="#" target="_blank">персональных данных</a>
+		</p>
+	</div>
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__wrapper">
+				<div class="footer__main">
+					<a href="/" class="footer__logo">Barcelona event</a>
+					<a href="#modal-connect" data-fancybox class="btn-s footer__main-btn _desk">Связаться</a>
+				</div>
+				<div class="footer__nav">
+					<div class="footer__nav-item">
+						<div class="footer__nav-title">Контакты</div>
+						<a href="tel:+74994040132" class="footer__contacts-btn">+7 499 404 01 32</a>
+						<div class="footer__contacts-wrapper">
+							<a href="mailto:info@romantic-stream.ru" class="footer__contacts-btn">info@romantic-stream.ru</a>
+							<div class="footer__social">
+								<a href="#" target="_blank" class="footer__social-btn">
+									<svg>
+										<use xlink:href='img/icons/icons.svg#icon-wh'></use>
+									</svg>
+								</a>
+								<a href="#" target="_blank" class="footer__social-btn">
+									<svg>
+										<use xlink:href='img/icons/icons.svg#icon-inst'></use>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="footer__nav-item">
+						<div class="footer__nav-title">Документы</div>
+						<ul class="list footer__nav-list">
+							<li><a href="#">Политика конфиденциальности</a></li>
+							<li><a href="#">Пользовательское соглашение</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<a href="#modal-connect" data-fancybox class="btn-s footer__main-btn _mob">Связаться</a>
+		</div>
+	</footer>
+
+	<script src="./files/fancybox/fancybox.min.js?_v=20250910211733"></script>
+	<script src="./files/inputmask/inputmask.min.js?_v=20250910211733"></script>
+	<script src="./files/aos/aos.min.js?_v=20250910211733"></script>
+	<script src="./files/swiper/swiper.min.js?_v=20250910211733"></script>
+	<script src="js/app.min.js?_v=20250910211733"></script>
+</body>
+
+</html>
