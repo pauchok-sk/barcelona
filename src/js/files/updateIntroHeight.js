@@ -3,7 +3,7 @@ export default function updateIntroHeight() {
 
   if (intro) {
     function update() {
-      intro.style.maxHeight = `${window.visualViewport.height}px`;
+      intro.style.minHeight = `${window.visualViewport.height}px`;
     }
   
     window.visualViewport.addEventListener("resize", update);
