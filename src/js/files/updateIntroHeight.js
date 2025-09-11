@@ -6,8 +6,8 @@ export default function updateIntroHeight() {
       intro.style.minHeight = `${window.visualViewport.height}px`;
     }
   
-    window.visualViewport.addEventListener("resize", update);
-    window.visualViewport.addEventListener("scroll", update);
+    // window.visualViewport.addEventListener("resize", update);
+    // window.visualViewport.addEventListener("scroll", update);
     update();
   }
 }

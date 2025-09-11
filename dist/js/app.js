@@ -452,8 +452,6 @@
             function update() {
                 intro.style.minHeight = `${window.visualViewport.height}px`;
             }
-            window.visualViewport.addEventListener("resize", update);
-            window.visualViewport.addEventListener("scroll", update);
             update();
         }
     }
