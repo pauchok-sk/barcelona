@@ -13,7 +13,7 @@
   cursor: pointer;
   padding: 17px 20px;
   width: fit-content;
-  border-radius: 5px;
+  border-radius: 10px;
   border: 1px solid var(--primary);
   background-color: var(--primary);
 
@@ -22,7 +22,10 @@
   font-size: 20px;
   text-align: center;
 
-  transition: color .3s ease, border-color .3s ease, background-color .3s ease;
+  transition:
+    color 0.3s ease,
+    border-color 0.3s ease,
+    background-color 0.3s ease;
   @include hover {
     border-color: var(--primary-dark);
     background-color: var(--primary-dark);
@@ -30,6 +33,7 @@
   @include tablet {
     font-size: 16px;
     padding: 15px;
+    border-radius: 5px;
   }
 
   &._outline {

@@ -13,7 +13,7 @@
     background-color: var(--dark);
     padding: 20px 0px;
     @include tablet {
-      padding: 15px 0px;
+      padding: 25px 0px 15px 0px;
     }
   }
   &._scroll {

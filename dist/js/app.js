@@ -168,21 +168,36 @@
             const btnPrev = document.querySelector(".s-media .slider-nav__btn._prev");
             btnNext.addEventListener("click", scrollEnd);
             btnPrev.addEventListener("click", scrollStart);
+            let index = 0;
             function scrollEnd() {
+                index = index === 2 ? 0 : index + 1;
+                let scroll = index * 310;
                 wrapper.scrollTo({
-                    left: wrapper.scrollWidth - wrapper.clientWidth,
+                    left: scroll,
                     behavior: "smooth"
                 });
             }
             function scrollStart() {
+                index = index === 0 ? 2 : index - 1;
+                let scroll = index * 310;
                 wrapper.scrollTo({
-                    left: 0,
+                    left: scroll,
                     behavior: "smooth"
                 });
             }
         }
     }
     function sliders() {
+        const introSlider = document.querySelector(".intro__slider");
+        if (introSlider) {
+            new Swiper(introSlider, {
+                speed: 800,
+                effect: "fade",
+                autoplay: {
+                    delay: 3600
+                }
+            });
+        }
         const portfolioSlider = document.querySelector(".s-portfolio__slider");
         if (portfolioSlider) {
             new Swiper(portfolioSlider, {
@@ -221,8 +236,8 @@
                     delay: 3200
                 },
                 navigation: {
-                    prevEl: ".s-reviews .slider-arrow._prev",
-                    nextEl: ".s-reviews .slider-arrow._next"
+                    prevEl: ".s-format .slider-nav__btn._prev",
+                    nextEl: ".s-format .slider-nav__btn._next"
                 },
                 breakpoints: {
                     992: {
@@ -431,6 +446,17 @@
             });
         }
     }
+    function updateIntroHeight() {
+        const intro = document.querySelector(".intro");
+        if (intro) {
+            function update() {
+                intro.style.maxHeight = `${window.visualViewport.height}px`;
+            }
+            window.visualViewport.addEventListener("resize", update);
+            window.visualViewport.addEventListener("scroll", update);
+            update();
+        }
+    }
     spoller();
     burger();
     inputmask();
@@ -439,6 +465,7 @@
     headerScroll();
     mediaScroll();
     formatModalTitle();
+    updateIntroHeight();
     AOS.init();
     Fancybox.bind("[data-fancybox]", {});
 })();

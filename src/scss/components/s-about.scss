@@ -65,9 +65,8 @@
     }
     @include tablet {
       grid-template-columns: 1fr;
-    }
-    @include tablet {
       padding: 40px 10px;
+      border-radius: 5px;
     }
   }
   &__item {

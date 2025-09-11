@@ -8,15 +8,23 @@ export default function mediaScroll() {
     btnNext.addEventListener("click", scrollEnd);
     btnPrev.addEventListener("click", scrollStart);
 
+    let index = 0;
+
     function scrollEnd() {
+      index = index === 2 ? 0 : index + 1;
+      let scroll = index * 310;
+
       wrapper.scrollTo({
-        left: wrapper.scrollWidth - wrapper.clientWidth, 
+        left: scroll,
         behavior: "smooth",
       });
     }
     function scrollStart() {
+      index = index === 0 ? 2 : index - 1;
+      let scroll = index * 310;
+
       wrapper.scrollTo({
-        left: 0,
+        left: scroll,
         behavior: "smooth",
       });
     }

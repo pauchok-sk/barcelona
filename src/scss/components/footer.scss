@@ -29,6 +29,10 @@
     text-transform: uppercase;
     color: #32372f;
     white-space: nowrap;
+    transition: opacity .3s ease;
+    @include hover {
+      opacity: 0.8;
+    }
     @include tablet-min {
       margin-bottom: 0;
       font-size: 16px;
@@ -37,9 +41,11 @@
   &__main-btn {
     width: 200px;
     max-width: 100%;
+    padding: 12px !important;
     @include tablet-min {
       width: 100%;
       margin-top: 30px;
+      padding: 15px !important;
     }
 
     &._desk {
@@ -64,6 +70,10 @@
     }
   }
   &__nav-item {
+    @include tablet-min {
+      padding-bottom: 20px;
+      border-bottom: 1px solid var(--dark);
+    }
   }
   &__nav-title {
     font-weight: 600;

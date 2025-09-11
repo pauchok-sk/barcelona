@@ -257,7 +257,7 @@ body {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  border-radius: 5px;
+  border-radius: 10px;
   border: 1px solid var(--primary);
   background-color: var(--primary);
   color: #fff;
@@ -536,15 +536,19 @@ body {
   content: "";
   inset: 0;
   background: #686059;
-  opacity: .3;
+  opacity: .2;
   z-index: -1
 }
-.intro__bg {
+.intro__slider {
   position: absolute;
   inset: 0;
   z-index: -2
 }
-.intro__bg img {
+.intro__slide-picture {
+  width: 100%;
+  height: 100%
+}
+.intro__slide-picture img {
   display: block;
   width: 100%;
   height: 100%;
@@ -681,6 +685,9 @@ body {
   align-items: flex-end;
   border-radius: 10px;
   padding: 20px
+}
+.s-gallery a.s-gallery__item-gallery {
+  transition: opacity .3s ease
 }
 .s-gallery__item-title {
   font-weight: 500;
@@ -844,7 +851,9 @@ body {
   max-width: 100%;
   width: 395px!important;
   color: #fff;
-  z-index: 1
+  outline: 0;
+  z-index: 1;
+  transition: opacity .3s ease
 }
 .s-portfolio__slide:first-child {
   border-radius: 10px 0 0 10px
@@ -1082,6 +1091,9 @@ body {
   width: 100%;
   font-size: 20px!important
 }
+.s-format__slider-nav {
+  margin: 20px 0 0 auto
+}
 .footer {
   padding: 80px 0;
   color: #32372f
@@ -1103,11 +1115,13 @@ body {
   font-size: 30px;
   text-transform: uppercase;
   color: #32372f;
-  white-space: nowrap
+  white-space: nowrap;
+  transition: opacity .3s ease
 }
 .footer__main-btn {
   width: 200px;
-  max-width: 100%
+  max-width: 100%;
+  padding: 12px!important
 }
 .footer__nav {
   display: flex;
@@ -1176,82 +1190,110 @@ body {
   }
 }
 @media (min-width:992px) {
+  .s-gallery__events-grid a:first-child,
   .s-gallery__events-grid div:first-child {
     grid-area: 1/1/3/3
   }
+  .s-gallery__events-grid a:nth-child(2),
   .s-gallery__events-grid div:nth-child(2) {
     grid-area: 2/3/3/4
   }
+  .s-gallery__events-grid a:nth-child(3),
   .s-gallery__events-grid div:nth-child(3) {
     grid-area: 1/3/2/5
   }
+  .s-gallery__events-grid a:nth-child(4),
   .s-gallery__events-grid div:nth-child(4) {
     grid-area: 3/1/4/2
   }
+  .s-gallery__events-grid a:nth-child(5),
   .s-gallery__events-grid div:nth-child(5) {
     grid-area: 2/4/3/5
   }
+  .s-gallery__events-grid a:nth-child(6),
   .s-gallery__events-grid div:nth-child(6) {
     grid-area: 3/4/4/5
   }
+  .s-gallery__events-grid a:nth-child(7),
   .s-gallery__events-grid div:nth-child(7) {
     grid-area: 3/2/4/4
   }
+  .s-gallery__history-grid a:first-child,
   .s-gallery__history-grid div:first-child {
     grid-area: 1/2/2/4
   }
+  .s-gallery__history-grid a:nth-child(2),
   .s-gallery__history-grid div:nth-child(2) {
     grid-area: 1/1/2/2
   }
+  .s-gallery__history-grid a:nth-child(3),
   .s-gallery__history-grid div:nth-child(3) {
     grid-area: 2/3/3/5
   }
+  .s-gallery__history-grid a:nth-child(4),
   .s-gallery__history-grid div:nth-child(4) {
     grid-area: 1/4/2/5
   }
+  .s-gallery__history-grid a:nth-child(5),
   .s-gallery__history-grid div:nth-child(5) {
     grid-area: 2/1/3/2
   }
+  .s-gallery__history-grid a:nth-child(6),
   .s-gallery__history-grid div:nth-child(6) {
     grid-area: 2/2/3/3
   }
+  .s-gallery__script-grid a:first-child,
   .s-gallery__script-grid div:first-child {
     grid-area: 1/1/2/3
   }
+  .s-gallery__script-grid a:nth-child(2),
   .s-gallery__script-grid div:nth-child(2) {
     grid-area: 1/3/2/4
   }
+  .s-gallery__script-grid a:nth-child(3),
   .s-gallery__script-grid div:nth-child(3) {
     grid-area: 2/2/3/4
   }
+  .s-gallery__script-grid a:nth-child(4),
   .s-gallery__script-grid div:nth-child(4) {
     grid-area: 2/1/3/2
   }
+  .s-gallery__script-grid a:nth-child(5),
   .s-gallery__script-grid div:nth-child(5) {
     grid-area: 2/4/3/5
   }
+  .s-gallery__script-grid a:nth-child(6),
   .s-gallery__script-grid div:nth-child(6) {
     grid-area: 1/4/2/5
   }
+  .s-gallery__offer-grid a:first-child,
   .s-gallery__offer-grid div:first-child {
     grid-area: 1/1/2/2
   }
+  .s-gallery__offer-grid a:nth-child(2),
   .s-gallery__offer-grid div:nth-child(2) {
     grid-area: 2/1/3/2
   }
+  .s-gallery__offer-grid a:nth-child(3),
   .s-gallery__offer-grid div:nth-child(3) {
     grid-area: 1/2/2/4
   }
+  .s-gallery__offer-grid a:nth-child(4),
   .s-gallery__offer-grid div:nth-child(4) {
     grid-area: 1/4/2/5
   }
+  .s-gallery__offer-grid a:nth-child(5),
   .s-gallery__offer-grid div:nth-child(5) {
     grid-area: 2/3/3/5
   }
+  .s-gallery__offer-grid a:nth-child(6),
   .s-gallery__offer-grid div:nth-child(6) {
     grid-area: 2/2/3/3
   }
   .s-media__slider-nav {
+    display: none
+  }
+  .s-format__slider-nav {
     display: none
   }
 }
@@ -1291,6 +1333,7 @@ body {
     grid-template-rows: auto;
     grid-template-columns: repeat(2,1fr)
   }
+  .s-gallery__events-grid a,
   .s-gallery__events-grid div {
     min-height: 215px
   }
@@ -1298,6 +1341,7 @@ body {
     grid-template-rows: auto;
     grid-template-columns: repeat(2,1fr)
   }
+  .s-gallery__history-grid a,
   .s-gallery__history-grid div {
     min-height: 280px
   }
@@ -1305,6 +1349,7 @@ body {
     grid-template-rows: auto;
     grid-template-columns: repeat(2,1fr)
   }
+  .s-gallery__script-grid a,
   .s-gallery__script-grid div {
     min-height: 280px
   }
@@ -1312,6 +1357,7 @@ body {
     grid-template-rows: auto;
     grid-template-columns: repeat(2,1fr)
   }
+  .s-gallery__offer-grid a,
   .s-gallery__offer-grid div {
     min-height: 280px
   }
@@ -1439,7 +1485,8 @@ body {
   }
   .btn-s {
     font-size: 16px;
-    padding: 15px
+    padding: 15px;
+    border-radius: 5px
   }
   .input {
     font-size: 16px;
@@ -1484,7 +1531,7 @@ body {
     margin-bottom: 20px
   }
   .header._bg {
-    padding: 15px 0
+    padding: 25px 0 15px 0
   }
   .intro__btn {
     -webkit-transform: translateY(0);
@@ -1501,10 +1548,9 @@ body {
     border-radius: 5px
   }
   .s-about__grid {
-    grid-template-columns: 1fr
-  }
-  .s-about__grid {
-    padding: 40px 10px
+    grid-template-columns: 1fr;
+    padding: 40px 10px;
+    border-radius: 5px
   }
   .s-gallery__quote {
     font-size: 14px;
@@ -1642,8 +1688,10 @@ body {
     flex-direction: column-reverse
   }
   .s-gallery__events-grid {
-    grid-template-columns: 1fr
+    grid-template-columns: 1fr;
+    gap: 10px
   }
+  .s-gallery__events-grid a,
   .s-gallery__events-grid div {
     min-height: auto;
     gap: 10px
@@ -1657,7 +1705,8 @@ body {
     font-size: 14px
   }
   .s-gallery__item-descr {
-    padding: 10px
+    padding: 10px;
+    border-radius: 5px
   }
   .s-gallery__item-descr h5 {
     font-size: 14px
@@ -1669,6 +1718,7 @@ body {
     grid-template-columns: 1fr;
     gap: 10px
   }
+  .s-gallery__history-grid a,
   .s-gallery__history-grid div {
     min-height: 180px
   }
@@ -1680,6 +1730,7 @@ body {
     grid-template-columns: 1fr;
     gap: 10px
   }
+  .s-gallery__script-grid a,
   .s-gallery__script-grid div {
     min-height: 180px
   }
@@ -1691,6 +1742,7 @@ body {
     grid-template-columns: 1fr;
     gap: 10px
   }
+  .s-gallery__offer-grid a,
   .s-gallery__offer-grid div {
     min-height: 180px
   }
@@ -1729,19 +1781,27 @@ body {
   .s-step__btn {
     width: 100%
   }
+  .s-faq__spoller {
+    border-radius: 5px
+  }
   .footer__logo {
     margin-bottom: 0;
     font-size: 16px
   }
   .footer__main-btn {
     width: 100%;
-    margin-top: 30px
+    margin-top: 30px;
+    padding: 15px!important
   }
   .footer__main-btn._desk {
     display: none
   }
   .footer__nav {
     flex-direction: column
+  }
+  .footer__nav-item {
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--dark)
   }
   .footer__nav-title {
     font-size: 12px
@@ -1795,12 +1855,21 @@ body {
   .header__burger-btn:hover {
     color: var(--primary)
   }
+  .s-gallery a.s-gallery__item-gallery:hover {
+    opacity: .7
+  }
+  .s-portfolio__slide:hover {
+    opacity: .8
+  }
   .s-faq__spoller-btn:hover {
     color: var(--primary)
   }
   .s-media__item:hover img {
     -webkit-transform: scale(1.07);
     transform: scale(1.07)
+  }
+  .footer__logo:hover {
+    opacity: .8
   }
   .footer__contacts-btn:hover {
     color: var(--primary)
@@ -1846,12 +1915,21 @@ body {
   .header__burger-btn:active {
     color: var(--primary)
   }
+  .s-gallery a.s-gallery__item-gallery:active {
+    opacity: .7
+  }
+  .s-portfolio__slide:active {
+    opacity: .8
+  }
   .s-faq__spoller-btn:active {
     color: var(--primary)
   }
   .s-media__item:active img {
     -webkit-transform: scale(1.07);
     transform: scale(1.07)
+  }
+  .footer__logo:active {
+    opacity: .8
   }
   .footer__contacts-btn:active {
     color: var(--primary)

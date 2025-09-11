@@ -6,16 +6,45 @@
     @@include('html/components/header.html')
     <main>
       <section class="intro">
-        <picture class="intro__bg">
-          <source
-            srcset="@img/intro-meetings-mob.jpg"
-            media="(max-width: 576px)"
-          />
-          <img src="@img/intro-meetings.jpg" alt="image" />
-        </picture>
+        <div class="swiper intro__slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide intro__slide">
+              <picture class="intro__slide-picture">
+                <source
+                  srcset="@img/intro-meetings-mob.jpg"
+                  media="(max-width: 576px)"
+                />
+                <img src="@img/intro-meetings.jpg" alt="image" />
+              </picture>
+            </div>
+            <div class="swiper-slide intro__slide">
+              <picture class="intro__slide-picture">
+                <source
+                  srcset="@img/intro-weddings-mob.jpg"
+                  media="(max-width: 576px)"
+                />
+                <img src="@img/intro-weddings.jpg" alt="image" />
+              </picture>
+            </div>
+            <div class="swiper-slide intro__slide">
+              <picture class="intro__slide-picture">
+                <source
+                  srcset="@img/intro-mob.jpg"
+                  media="(max-width: 576px)"
+                />
+                <img src="@img/intro.jpg" alt="image" />
+              </picture>
+            </div>
+          </div>
+        </div>
         <div class="container">
           <div class="intro__wrapper">
-            <h1 class="intro__title s-title" data-aos="fade-up" data-aos-delay="300" data-aos-duration="500">
+            <h1
+              class="intro__title s-title"
+              data-aos="fade-up"
+              data-aos-delay="300"
+              data-aos-duration="500"
+            >
               сценарии для ваших
               <span>романтических встреч</span>
             </h1>
@@ -27,12 +56,20 @@
       </section>
       <section class="s-gallery sect-p">
         <div class="container">
-          <h2 class="s-title s-gallery__title _center _dark" data-aos="fade-up" data-aos-duration="500">
+          <h2
+            class="s-title s-gallery__title _center _dark"
+            data-aos="fade-up"
+            data-aos-duration="500"
+          >
             что делает наши свидания
             <br />
             <span>по-настоящему особенными</span>
           </h2>
-          <p  class="s-gallery__quote" data-aos="fade-up" data-aos-duration="500">
+          <p
+            class="s-gallery__quote"
+            data-aos="fade-up"
+            data-aos-duration="500"
+          >
             Здесь наша задача состоит в том, чтобы подобрать идею, которая
             откликается именно вам: тихий вечер под открытым небом, прогулка на
             яхте на закате, ужин с захватывающим видом на Саграду Фамилию или
@@ -41,13 +78,19 @@
           </p>
           <div class="s-gallery__history-grid">
             <div
-              class="s-gallery__item-gallery" data-aos="fade" data-aos-duration="500"
+              class="s-gallery__item-gallery"
+              data-aos="fade"
+              data-aos-duration="500"
               style="
                 background: url(&quot;@img/meeting-gallery.jpg&quot;) center /
                   cover no-repeat;
               "
             ></div>
-            <div class="s-gallery__item-descr" data-aos="fade-up" data-aos-duration="500">
+            <div
+              class="s-gallery__item-descr"
+              data-aos="fade-up"
+              data-aos-duration="500"
+            >
               <span>
                 <h5>прозрачные условия</h5>
                 <p>
@@ -56,7 +99,11 @@
                 </p>
               </span>
             </div>
-            <div class="s-gallery__item-descr _fill" data-aos="fade-up" data-aos-duration="500">
+            <div
+              class="s-gallery__item-descr _fill"
+              data-aos="fade-up"
+              data-aos-duration="500"
+            >
               <span>
                 <h5>конфиденциальность - наш стандарт</h5>
                 <p>
@@ -67,7 +114,11 @@
                 </p>
               </span>
             </div>
-            <div class="s-gallery__item-descr" data-aos="fade-up" data-aos-duration="500">
+            <div
+              class="s-gallery__item-descr"
+              data-aos="fade-up"
+              data-aos-duration="500"
+            >
               <span>
                 <h5>предлагаем сценарии</h5>
                 <p>
@@ -77,13 +128,19 @@
               </span>
             </div>
             <div
-              class="s-gallery__item-gallery" data-aos="fade" data-aos-duration="500"
+              class="s-gallery__item-gallery"
+              data-aos="fade"
+              data-aos-duration="500"
               style="
                 background: url(&quot;@img/meeting-gallery.jpg&quot;) center /
                   cover no-repeat;
               "
             ></div>
-            <div class="s-gallery__item-descr" data-aos="fade-up" data-aos-duration="500">
+            <div
+              class="s-gallery__item-descr"
+              data-aos="fade-up"
+              data-aos-duration="500"
+            >
               <span>
                 <h5>против банальности</h5>
                 <p>
@@ -103,7 +160,11 @@
       <section class="sect-p s-media">
         <div class="container">
           <div class="sect-head _reverse">
-            <h2 class="s-title _dark" data-aos="fade-up" data-aos-duration="500">
+            <h2
+              class="s-title _dark"
+              data-aos="fade-up"
+              data-aos-duration="500"
+            >
               Вдохновитесь моментами
               <span>наших влюбленных пар</span>
             </h2>
@@ -114,70 +175,90 @@
               <a
                 href="@img/media-birthdays.jpg"
                 data-fancybox="media"
-                class="s-media__item" data-aos="fade" data-aos-duration="500"
+                class="s-media__item"
+                data-aos="fade"
+                data-aos-duration="500"
               >
                 <img src="@img/media-birthdays.jpg" alt="image" />
               </a>
               <a
                 href="@img/media-birthdays.jpg"
                 data-fancybox="media"
-                class="s-media__item" data-aos="fade" data-aos-duration="500"
+                class="s-media__item"
+                data-aos="fade"
+                data-aos-duration="500"
               >
                 <img src="@img/media-birthdays.jpg" alt="image" />
               </a>
               <a
                 href="@img/media-birthdays.jpg"
                 data-fancybox="media"
-                class="s-media__item" data-aos="fade" data-aos-duration="500"
+                class="s-media__item"
+                data-aos="fade"
+                data-aos-duration="500"
               >
                 <img src="@img/media-birthdays.jpg" alt="image" />
               </a>
               <a
                 href="@img/media-birthdays.jpg"
                 data-fancybox="media"
-                class="s-media__item" data-aos="fade" data-aos-duration="500"
+                class="s-media__item"
+                data-aos="fade"
+                data-aos-duration="500"
               >
                 <img src="@img/media-birthdays.jpg" alt="image" />
               </a>
               <a
                 href="@img/media-birthdays.jpg"
                 data-fancybox="media"
-                class="s-media__item" data-aos="fade" data-aos-duration="500"
+                class="s-media__item"
+                data-aos="fade"
+                data-aos-duration="500"
               >
                 <img src="@img/media-birthdays.jpg" alt="image" />
               </a>
               <a
                 href="@img/media-birthdays.jpg"
                 data-fancybox="media"
-                class="s-media__item" data-aos="fade" data-aos-duration="500"
+                class="s-media__item"
+                data-aos="fade"
+                data-aos-duration="500"
               >
                 <img src="@img/media-birthdays.jpg" alt="image" />
               </a>
               <a
                 href="@img/media-birthdays.jpg"
                 data-fancybox="media"
-                class="s-media__item" data-aos="fade" data-aos-duration="500"
+                class="s-media__item"
+                data-aos="fade"
+                data-aos-duration="500"
               >
                 <img src="@img/media-birthdays.jpg" alt="image" />
               </a>
               <a
                 href="@img/media-birthdays.jpg"
                 data-fancybox="media"
-                class="s-media__item" data-aos="fade" data-aos-duration="500"
+                class="s-media__item"
+                data-aos="fade"
+                data-aos-duration="500"
               >
                 <img src="@img/media-birthdays.jpg" alt="image" />
               </a>
               <a
                 href="@img/media-birthdays.jpg"
                 data-fancybox="media"
-                class="s-media__item" data-aos="fade" data-aos-duration="500"
+                class="s-media__item"
+                data-aos="fade"
+                data-aos-duration="500"
               >
                 <img src="@img/media-birthdays.jpg" alt="image" />
               </a>
               <a
                 href="@img/media-birthdays.jpg"
                 data-fancybox="media"
-                class="s-media__item" data-aos="fade" data-aos-duration="500"
+                class="s-media__item"
+                data-aos="fade"
+                data-aos-duration="500"
               >
                 <img src="@img/media-birthdays.jpg" alt="image" />
               </a>

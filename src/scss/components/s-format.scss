@@ -40,4 +40,10 @@
     width: 100%;
     font-size: 20px !important;
   }
+  &__slider-nav {
+    margin: 20px 0px 0px auto;
+    @media (min-width: 992px) {
+      display: none;
+    }
+  }
 }

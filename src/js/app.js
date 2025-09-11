@@ -7,6 +7,7 @@ import mediaAdaptive from "./files/mediaAdaptive.js";
 import mediaScroll from "./files/mediaScroll.js";
 import sliders from "./files/sliders.js";
 import spoller from "./files/spoller.js";
+import updateIntroHeight from "./files/updateIntroHeight.js";
 
 spoller();
 burger();
@@ -16,6 +17,7 @@ sliders();
 headerScroll();
 mediaScroll();
 formatModalTitle();
+updateIntroHeight();
 
 AOS.init();
 

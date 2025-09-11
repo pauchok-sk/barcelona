@@ -9,11 +9,11 @@
 	<link rel="shortcut icon" href="favicon.ico" />
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap&_v=20250910211733" rel="stylesheet" />
-	<link rel="stylesheet" href="./files/fancybox/fancybox.min.css?_v=20250910211733">
-	<link rel="stylesheet" href="./files/swiper/swiper.min.css?_v=20250910211733">
-	<link rel="stylesheet" href="./files/aos/aos.min.css?_v=20250910211733">
-	<link rel="stylesheet" href="css/style.min.css?_v=20250910211733" />
+	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap&_v=20250911161915" rel="stylesheet" />
+	<link rel="stylesheet" href="./files/fancybox/fancybox.min.css?_v=20250911161915">
+	<link rel="stylesheet" href="./files/swiper/swiper.min.css?_v=20250911161915">
+	<link rel="stylesheet" href="./files/aos/aos.min.css?_v=20250911161915">
+	<link rel="stylesheet" href="css/style.min.css?_v=20250911161915" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
@@ -64,19 +64,35 @@
 
 	<main>
 		<section class="intro">
-			<picture class="intro__bg">
-				<source srcset="img/intro-birthdays-mob.jpg" media="(max-width: 576px)" />
-				<img src="img/intro-birthdays.jpg" alt="image" />
-			</picture>
+			<div class="swiper intro__slider">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide intro__slide">
+						<picture class="intro__slide-picture">
+							<source srcset="img/intro-birthdays-mob.jpg" media="(max-width: 576px)">
+							<img src="img/intro-birthdays.jpg" alt="image">
+						</picture>
+					</div>
+					<div class="swiper-slide intro__slide">
+						<picture class="intro__slide-picture">
+							<source srcset="img/intro-mob.jpg" media="(max-width: 576px)">
+							<img src="img/intro.jpg" alt="image">
+						</picture>
+					</div>
+					<div class="swiper-slide intro__slide">
+						<picture class="intro__slide-picture">
+							<source srcset="img/intro-meetings-mob.jpg" media="(max-width: 576px)">
+							<img src="img/intro-meetings.jpg" alt="image">
+						</picture>
+					</div>
+				</div>
+			</div>
 			<div class="container">
 				<div class="intro__wrapper">
 					<h1 class="intro__title s-title" data-aos="fade-up" data-aos-delay="300" data-aos-duration="500">
-						ваш стиль, ваша атмосфера,
-						<span>ваш день рождения</span>
+						Свадьба - день полный
+						<span>любви и красоты</span>
 					</h1>
-					<a href="#modal-connect" data-fancybox class="btn-s intro__btn">
-						Оставить заявку
-					</a>
+					<a href="#modal-connect" data-fancybox class="btn-s intro__btn">Связаться</a>
 				</div>
 			</div>
 		</section>
@@ -359,7 +375,7 @@
 				<div class="tag _white s-faq__tag">FAQ</div>
 				<div data-spollers class="s-faq__spollers">
 					<div data-aos="fade-up" data-aos-duration="500" class="s-faq__spoller">
-						<div data-spoller class="s-faq__spoller-btn">
+						<div data-spoller class="s-faq__spoller-btn _spoller-active">
 							<span>Как забронировать мероприятие?</span>
 							<svg>
 								<use xlink:href="img/icons/icons.svg#icon-plus"></use>
@@ -559,11 +575,11 @@
 		</div>
 	</footer>
 
-	<script src="./files/fancybox/fancybox.min.js?_v=20250910211733"></script>
-	<script src="./files/inputmask/inputmask.min.js?_v=20250910211733"></script>
-	<script src="./files/aos/aos.min.js?_v=20250910211733"></script>
-	<script src="./files/swiper/swiper.min.js?_v=20250910211733"></script>
-	<script src="js/app.min.js?_v=20250910211733"></script>
+	<script src="./files/fancybox/fancybox.min.js?_v=20250911161915"></script>
+	<script src="./files/inputmask/inputmask.min.js?_v=20250911161915"></script>
+	<script src="./files/aos/aos.min.js?_v=20250911161915"></script>
+	<script src="./files/swiper/swiper.min.js?_v=20250911161915"></script>
+	<script src="js/app.min.js?_v=20250911161915"></script>
 </body>
 
 </html>

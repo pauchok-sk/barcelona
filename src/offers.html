@@ -6,16 +6,45 @@
     @@include('html/components/header.html')
     <main>
       <section class="intro">
-        <picture class="intro__bg">
-          <source
-            srcset="@img/intro-offer-mob.jpg"
-            media="(max-width: 576px)"
-          />
-          <img src="@img/intro-offer.jpg" alt="image" />
-        </picture>
+        <div class="swiper intro__slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide intro__slide">
+              <picture class="intro__slide-picture">
+                <source
+                  srcset="@img/intro-offer-mob.jpg"
+                  media="(max-width: 576px)"
+                />
+                <img src="@img/intro-offer.jpg" alt="image" />
+              </picture>
+            </div>
+            <div class="swiper-slide intro__slide">
+              <picture class="intro__slide-picture">
+                <source
+                  srcset="@img/intro-weddings-mob.jpg"
+                  media="(max-width: 576px)"
+                />
+                <img src="@img/intro-weddings.jpg" alt="image" />
+              </picture>
+            </div>
+            <div class="swiper-slide intro__slide">
+              <picture class="intro__slide-picture">
+                <source
+                  srcset="@img/intro-mob.jpg"
+                  media="(max-width: 576px)"
+                />
+                <img src="@img/intro.jpg" alt="image" />
+              </picture>
+            </div>
+          </div>
+        </div>
         <div class="container">
           <div class="intro__wrapper">
-            <h1 class="intro__title s-title" data-aos="fade-up" data-aos-delay="300" data-aos-duration="500">
+            <h1
+              class="intro__title s-title"
+              data-aos="fade-up"
+              data-aos-delay="300"
+              data-aos-duration="500"
+            >
               предложение руки и сердца
               <span>начало новой главы</span>
             </h1>
@@ -27,12 +56,20 @@
       </section>
       <section class="s-gallery sect-p">
         <div class="container">
-          <h2 class="s-title s-gallery__title _center _dark" data-aos="fade-up" data-aos-duration="500">
+          <h2
+            class="s-title s-gallery__title _center _dark"
+            data-aos="fade-up"
+            data-aos-duration="500"
+          >
             событие, в котором
             <br />
             <span>все должно быть идеально</span>
           </h2>
-          <p  class="s-gallery__quote" data-aos="fade-up" data-aos-duration="500">
+          <p
+            class="s-gallery__quote"
+            data-aos="fade-up"
+            data-aos-duration="500"
+          >
             Предложение руки и сердца - это трепет, эмоции, неожиданность и
             искренние слезы счастья. Именно оно становится началом новой истории
             - вашей истории. И чтобы все прошло идеально, важно продумать каждую
@@ -41,13 +78,19 @@
           </p>
           <div class="s-gallery__offer-grid">
             <div
-              class="s-gallery__item-gallery" data-aos="fade" data-aos-duration="500"
+              class="s-gallery__item-gallery"
+              data-aos="fade"
+              data-aos-duration="500"
               style="
                 background: url(&quot;@img/offer-grid.jpg&quot;) center / cover
                   no-repeat;
               "
             ></div>
-            <div class="s-gallery__item-descr" data-aos="fade-up" data-aos-duration="500">
+            <div
+              class="s-gallery__item-descr"
+              data-aos="fade-up"
+              data-aos-duration="500"
+            >
               <span>
                 <h5>Берем все на себя</h5>
                 <p>
@@ -56,7 +99,11 @@
                 </p>
               </span>
             </div>
-            <div class="s-gallery__item-descr _fill" data-aos="fade-up" data-aos-duration="500">
+            <div
+              class="s-gallery__item-descr _fill"
+              data-aos="fade-up"
+              data-aos-duration="500"
+            >
               <span>
                 <h5>слушаем, понимаем, чувствуем</h5>
                 <p>
@@ -67,7 +114,11 @@
                 </p>
               </span>
             </div>
-            <div class="s-gallery__item-descr" data-aos="fade-up" data-aos-duration="500">
+            <div
+              class="s-gallery__item-descr"
+              data-aos="fade-up"
+              data-aos-duration="500"
+            >
               <span>
                 <h5>предлагаем сценарии</h5>
                 <p>
@@ -77,13 +128,19 @@
               </span>
             </div>
             <div
-              class="s-gallery__item-gallery" data-aos="fade" data-aos-duration="500"
+              class="s-gallery__item-gallery"
+              data-aos="fade"
+              data-aos-duration="500"
               style="
                 background: url(&quot;@img/offer-grid-2.jpg&quot;) center /
                   cover no-repeat;
               "
             ></div>
-            <div class="s-gallery__item-descr" data-aos="fade-up" data-aos-duration="500">
+            <div
+              class="s-gallery__item-descr"
+              data-aos="fade-up"
+              data-aos-duration="500"
+            >
               <span>
                 <h5>Работаем с интригой</h5>
                 <p>
@@ -102,7 +159,11 @@
       <section class="sect-p s-media">
         <div class="container">
           <div class="sect-head _reverse">
-            <h2 class="s-title _dark" data-aos="fade-up" data-aos-duration="500">
+            <h2
+              class="s-title _dark"
+              data-aos="fade-up"
+              data-aos-duration="500"
+            >
               Вдохновитесь историями
               <span>наших влюбленных пар</span>
             </h2>
@@ -113,70 +174,90 @@
               <a
                 href="@img/media.jpg"
                 data-fancybox="media"
-                class="s-media__item" data-aos="fade" data-aos-duration="500"
+                class="s-media__item"
+                data-aos="fade"
+                data-aos-duration="500"
               >
                 <img src="@img/media.jpg" alt="image" />
               </a>
               <a
                 href="@img/media.jpg"
                 data-fancybox="media"
-                class="s-media__item" data-aos="fade" data-aos-duration="500"
+                class="s-media__item"
+                data-aos="fade"
+                data-aos-duration="500"
               >
                 <img src="@img/media.jpg" alt="image" />
               </a>
               <a
                 href="@img/media.jpg"
                 data-fancybox="media"
-                class="s-media__item" data-aos="fade" data-aos-duration="500"
+                class="s-media__item"
+                data-aos="fade"
+                data-aos-duration="500"
               >
                 <img src="@img/media.jpg" alt="image" />
               </a>
               <a
                 href="@img/media.jpg"
                 data-fancybox="media"
-                class="s-media__item" data-aos="fade" data-aos-duration="500"
+                class="s-media__item"
+                data-aos="fade"
+                data-aos-duration="500"
               >
                 <img src="@img/media.jpg" alt="image" />
               </a>
               <a
                 href="@img/media.jpg"
                 data-fancybox="media"
-                class="s-media__item" data-aos="fade" data-aos-duration="500"
+                class="s-media__item"
+                data-aos="fade"
+                data-aos-duration="500"
               >
                 <img src="@img/media.jpg" alt="image" />
               </a>
               <a
                 href="@img/media.jpg"
                 data-fancybox="media"
-                class="s-media__item" data-aos="fade" data-aos-duration="500"
+                class="s-media__item"
+                data-aos="fade"
+                data-aos-duration="500"
               >
                 <img src="@img/media.jpg" alt="image" />
               </a>
               <a
                 href="@img/media.jpg"
                 data-fancybox="media"
-                class="s-media__item" data-aos="fade" data-aos-duration="500"
+                class="s-media__item"
+                data-aos="fade"
+                data-aos-duration="500"
               >
                 <img src="@img/media.jpg" alt="image" />
               </a>
               <a
                 href="@img/media.jpg"
                 data-fancybox="media"
-                class="s-media__item" data-aos="fade" data-aos-duration="500"
+                class="s-media__item"
+                data-aos="fade"
+                data-aos-duration="500"
               >
                 <img src="@img/media.jpg" alt="image" />
               </a>
               <a
                 href="@img/media.jpg"
                 data-fancybox="media"
-                class="s-media__item" data-aos="fade" data-aos-duration="500"
+                class="s-media__item"
+                data-aos="fade"
+                data-aos-duration="500"
               >
                 <img src="@img/media.jpg" alt="image" />
               </a>
               <a
                 href="@img/media.jpg"
                 data-fancybox="media"
-                class="s-media__item" data-aos="fade" data-aos-duration="500"
+                class="s-media__item"
+                data-aos="fade"
+                data-aos-duration="500"
               >
                 <img src="@img/media.jpg" alt="image" />
               </a>

@@ -1,4 +1,16 @@
 export default function sliders() {
+  const introSlider = document.querySelector(".intro__slider");
+
+  if (introSlider) {
+    const swiper = new Swiper(introSlider, {
+      speed: 800,
+      effect: "fade",
+      autoplay: {
+        delay: 3600,
+      },
+    });
+  }
+
   const portfolioSlider = document.querySelector(".s-portfolio__slider");
 
   if (portfolioSlider) {
@@ -42,8 +54,8 @@ export default function sliders() {
         delay: 3200,
       },
       navigation: {
-        prevEl: ".s-reviews .slider-arrow._prev",
-        nextEl: ".s-reviews .slider-arrow._next",
+        prevEl: ".s-format .slider-nav__btn._prev",
+        nextEl: ".s-format .slider-nav__btn._next",
       },
       breakpoints: {
         992: {
